@@ -26,6 +26,12 @@ const jsUser = {        // declaring objects here
 }   
 
 
+const tinderUser = {
+    id: "123abc",
+    name:"sammy",
+    isLoggedIn:"false",
+}
+
 // console.log(jsUser["full name"]);
 // console.log(jsUser.age);
 // console.log(jsUser["age"]);
@@ -33,3 +39,83 @@ const jsUser = {        // declaring objects here
 // console.log(typeof jsUser.mySym);
 // console.log(jsUser[mySym1]);
 // console.log(jsUser);
+
+
+// combining objects using spread(... operator)
+
+const obj1 = {1:"a",2:"b"}
+const obj2 = {3:"a",4:"b"}
+const obj3 = {...obj1,...obj2}
+
+//console.log(obj3);
+
+
+const users = [
+    {
+        id:1,
+        email:"user@gmail.com",
+    },
+    {
+        id:1,
+        email:"user@gmail.com",
+    },
+    {
+        id:1,
+        email:"user@gmail.com",
+    },
+    {
+        id:1,
+        email:"user@gmail.com",
+    },
+    {
+        id:1,
+        email:"user@gmail.com",
+    },
+    {
+        id:1,
+        email:"user@gmail.com",
+    },
+]
+
+//console.log(users[1].email)
+
+// console.log(tinderUser);
+// // console.log(Object.keys(tinderUser));
+// // console.log(Object.values(users));
+// console.log(Object.entries(tinderUser));
+
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+
+
+
+// ---->> Desctructuring of objects
+
+const course = {
+    courseName: "Js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+const {courseInstructor,price,courseName} = course
+const {courseInstructor:instructor} = course
+
+
+
+console.log(courseInstructor);
+console.log(instructor);
+
+
+// example of destructuring in react
+
+// here company object is descrutured in navbar component ,
+//so the elements inside object will be available in the function .
+
+
+// ------> passing objects as props
+const Navbar = ({company}) =>{
+    const {name} = company
+    console.log(name);
+}
+
+Navbar({company:"Hitesh"})
