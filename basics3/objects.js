@@ -26,10 +26,10 @@ const jsUser = {        // declaring objects here
 }   
 
 
-console.log(jsUser["full name"]);
-console.log(jsUser.age);
-console.log(jsUser["age"]);
-console.log(jsUser.lastLoggedIn[1]);
-console.log(typeof jsUser.mySym);
-console.log(jsUser[mySym1]);
-console.log(jsUser);
+// console.log(jsUser["full name"]);
+// console.log(jsUser.age);
+// console.log(jsUser["age"]);
+// console.log(jsUser.lastLoggedIn[1]);
+// console.log(typeof jsUser.mySym);
+// console.log(jsUser[mySym1]);
+// console.log(jsUser);
