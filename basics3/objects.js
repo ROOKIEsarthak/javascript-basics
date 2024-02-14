@@ -114,7 +114,7 @@ console.log(instructor);
 
 // ------> passing objects as props
 const Navbar = ({company}) =>{
-    const {name} = company
+    const name = company
     console.log(name);
 }
 
