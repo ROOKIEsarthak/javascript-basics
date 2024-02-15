@@ -1,4 +1,25 @@
-        
+
+//-------> ( rest operator )
+
+const calculateCartPrice = (...num) => {
+    return num
+}
+// ----> the (...num) means that the parameter num has multiple values in it and
+// ((...) #rest )operator is used to bundle all these values together and pass them 
+// returns the value combined in an array
+
+console.log(calculateCartPrice(200 , 400 , 500)); // output [200,300,400]
+
+
+const calculateCartPrice1 = (val1 , val2 , ...num1)=>{
+    return num1
+}
+// val1 and val2 will have values 200,300 and the rest of the values will go to num1
+// this is why it is known as rest operator as it combines the leftover value and 
+// returns it as a single entity .
+console.log(calculateCartPrice1(200 , 300,400,5000,600013,1324 )); // output [400,5000,600013,1324]
+
+
         // ---------> (this) keyword
         
         //keyword(this) is used to refer current context(values)
